@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cristian Bancayan</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-    nav a { margin-right: 15px; color: #007acc; text-decoration: none; }
-    section { margin-bottom: 40px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
+    .left {
+      flex: 1;
+      text-align: center;
+    }
+    .left img {
+      width: 180px;
+      border-radius: 100px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .right {
+      flex: 2;
+    }
+    .right h1 {
+      color: #2c3e50;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <h1>Cristian Bancayan</h1>
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#cv">CV</a>
-    <a href="#projects">Projects</a>
-  </nav>
+  <div class="left">
+    <img src="profile.jpg" alt="Cristian Bancayan">
+  </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a public policy graduate from UChicago, focused on education, social protection, and data-driven decisions.</p>
-  </section>
+  <div class="right">
+    <h1>About Me</h1>
+    <p>Hello! I'm Cristian Bancayan, a public policy professional passionate about education, social protection, and the power of data to improve lives. I have experience in the Peruvian public sector and a Master’s in Public Policy from the University of Chicago.</p>
 
-  <section id="cv">
-    <h2>CV</h2>
-    <p>You can download my CV <a href="cv.pdf" target="_blank">here</a>.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Peru Forum 2025:</strong> Organizer of academic conference on Peru’s future</li>
-      <li><strong>GIS Map:</strong> Visualizing education data in Peru</li>
-    </ul>
-  </section>
+    <footer>
+      Contact: cristian@email.com
+    </footer>
+  </div>
 </body>
 </html>
