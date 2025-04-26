@@ -10,43 +10,68 @@
       margin: 40px auto;
       max-width: 900px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap: 40px;
     }
-    .left {
-      flex: 1;
-      text-align: center;
+
+    .intro {
+      display: flex;
+      gap: 40px;
+      align-items: center;
     }
+
     .left img {
       width: 180px;
       border-radius: 100px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    .right {
-      flex: 2;
-    }
+
     .right h1 {
       color: #2c3e50;
     }
+
+    .buttons a {
+      display: inline-block;
+      margin-top: 15px;
+      margin-right: 15px;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .buttons a:hover {
+      background-color: #005f99;
+    }
+
     footer {
-      margin-top: 40px;
       font-size: 14px;
       color: #555;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="left">
-    <img src="profile.jpg" alt="Cristian Bancayan">
-  </div>
+  <div class="intro">
+    <div class="left">
+      <img src="profile.jpg" alt="Cristian Bancayan">
+    </div>
 
-  <div class="right">
-    <h1>About Me</h1>
-    <p>Hello! I'm Cristian Bancayan, a public policy professional passionate about education, social protection, and the power of data to improve lives. I have experience in the Peruvian public sector and a Master’s in Public Policy from the University of Chicago.</p>
+    <div class="right">
+      <h1>About Me</h1>
+      <p>Hello! I'm Cristian Bancayan, a public policy professional passionate about education, social protection, and the power of data to improve lives. I have experience in the Peruvian public sector and a Master’s in Public Policy from the University of Chicago.</p>
 
-    <footer>
-      Contact: cristian@email.com
-    </footer>
+      <div class="buttons">
+        <a href="cv.pdf" target="_blank">View CV</a>
+        <a href="projects.html">My Projects</a>
+      </div>
+
+      <footer>
+        Contact: cristian@email.com
+      </footer>
+    </div>
   </div>
 </body>
 </html>
