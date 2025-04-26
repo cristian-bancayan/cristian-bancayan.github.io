@@ -9,6 +9,7 @@
       font-family: Arial, sans-serif;
       margin: 40px auto;
       max-width: 900px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -16,23 +17,37 @@
 
     .intro {
       display: flex;
+      flex-wrap: wrap;
       gap: 40px;
       align-items: center;
+      justify-content: center;
+    }
+
+    .left {
+      flex: 1;
+      text-align: center;
     }
 
     .left img {
-      width: 180px;
-      border-radius: 100px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .right {
+      flex: 2;
     }
 
     .right h1 {
       color: #2c3e50;
+      margin-top: 0;
     }
 
     .buttons a {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 20px;
       margin-right: 15px;
       padding: 10px 20px;
       background-color: #007acc;
@@ -49,7 +64,7 @@
     footer {
       font-size: 14px;
       color: #555;
-      margin-top: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -61,7 +76,9 @@
 
     <div class="right">
       <h1>About Me</h1>
-      <p>Hello! I'm Cristian Bancayan, a public policy professional passionate about education, social protection, and the power of data to improve lives. I have experience in the Peruvian public sector and a Master’s in Public Policy from the University of Chicago.</p>
+      <p>I am a Peruvian economist from the National University of San Marcos and hold a Master of Public Policy from the Harris School of Public Policy at the University of Chicago.</p>
+      <p>I have over six years of experience in the Peruvian public sector, specializing in monitoring, impact evaluation, and social innovation. Currently, I work as a Research Assistant at the Behavioral Insights and Parenting Lab at UChicago. Previously, I led the Ayni Lab Social at the Ministry of Development and Social Inclusion and worked at IDinsight in Lusaka, Zambia, evaluating the impact of a large-scale cash transfer program for households in Malawi.</p>
+      <p>I lead the Monitoring and Evaluation area at the Sinkumunchis Foundation and previously coordinated academic support for rural students at Yachay Wasi NGO. I am passionate about early childhood development, rural education, and leveraging public policy to expand opportunities for vulnerable communities. Among life's simple pleasures, I find joy in football — proudly supporting Universitario de Deportes — and immersing myself in the rhythms of cumbia and salsa music.</p>
 
       <div class="buttons">
         <a href="cv.pdf" target="_blank">View CV</a>
@@ -69,7 +86,7 @@
       </div>
 
       <footer>
-        Contact: cristian@email.com
+        Contact: cristianbancayan@outlook.com
       </footer>
     </div>
   </div>
